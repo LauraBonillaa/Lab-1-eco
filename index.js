@@ -93,14 +93,14 @@ function renderpeopleData(person) {
 document.getElementById("anime-button").addEventListener("click", fetchAnimeData);
 
         async function fetchAnimeData() {
-            let name = document.getElementById("name").value.trim();
-            let type = document.getElementById("type").value.trim();
-            let limit = document.getElementById("limit").value.trim();
+            let name = document.getElementById("name").value;
+            let type = document.getElementById("type").value;
+            let limit = document.getElementById("limit").value;
 
             const URL = `https://api.jikan.moe/v4/anime?q=${name}&type=${type}&limit=${limit}`;
             
             try {
-                renderAnimeLoadingState(); // Mostrar estado de carga
+                renderAnimeLoadingState(); 
                 const response = await fetch(URL);
                 const data = await response.json();
 
@@ -127,7 +127,7 @@ document.getElementById("anime-button").addEventListener("click", fetchAnimeData
 
         function renderAnimeData(animeList) {
             const container = document.getElementById("anime-container");
-            container.innerHTML = ""; // Limpiar resultados anteriores
+            container.innerHTML = ""; 
 
             animeList.forEach(anime => {
                 const div = document.createElement("div");
