@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch API Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        #data-container {
+            margin-top: 20px;
+        }
+
+        .item {
+            margin-bottom: 10px;
+        }
+
+        img {
+            max-width: 300px;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <h1>Factos sobre Gatos</h1>
+        <button id="fetchcat-button">Factos</button>
+        <div id="datagato-container"></div>
+    </section>
+
+    <section>
+        <h1>Gente random</h1>
+        <button id="genterandom-button">Persona</button>
+        <div id="genterandom-container"></div>
+    </section>
+
+    <section>
+        <h1>Anime</h1>
+        <button id="anime-button">Search</button>
+        <div id="anime-container">
+            <input type="text" id="limit" placeholder="Ingresa Limite">
+            <input type="text" id="name"  placeholder="Ingresa Nombre">
+            <input type="text" id="type"  placeholder="Ingresa Tipo">
+        </div>
+    </section>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
